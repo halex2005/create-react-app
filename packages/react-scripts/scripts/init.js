@@ -122,10 +122,36 @@ module.exports = function(
     );
   }
 
+  // inject the possibility to template from local folder
+  const localTemplateName = '.cra-template'
+  const localTemplatePath = path.resolve(originalDirectory, localTemplateName)
+  if (!template && fs.existsSync(localTemplatePath)) {
+    template = localTemplateName
+  }
+
+  // try to get a local named template
+  const getTemplatePath = (template) => {
+    const customTemplatePath = path.resolve(originalDirectory, template);
+    // console.log('custom template', customTemplatePath)
+    if (fs.existsSync(customTemplatePath)) return customTemplatePath;
+
+    const knownTemplatePath = path.join(ownPath, `template-${template}`);
+    // console.log('known template', knownTemplatePath)
+    if (fs.existsSync(knownTemplatePath)) return knownTemplatePath;
+  };
+
   // Copy the files for the user
   const templatePath = template
-    ? path.resolve(originalDirectory, template)
+    ? getTemplatePath(template)
     : path.join(ownPath, useTypeScript ? 'template-typescript' : 'template');
+// <<<<<<< HEAD
+//     ? path.resolve(originalDirectory, template)
+//     : path.join(ownPath, useTypeScript ? 'template-typescript' : 'template');
+// =======
+//     // ? path.resolve(originalDirectory, template)
+//     ? getTemplatePath(template)
+//     : path.join(ownPath, 'template');
+// >>>>>>> templates
   if (fs.existsSync(templatePath)) {
     fs.copySync(templatePath, appPath);
   } else {
@@ -182,8 +208,6 @@ module.exports = function(
     fs.unlinkSync(templateDependenciesPath);
     hasTemplateDependencies = true;
   }
-
-  console.log('INSTALL ALL ', args)
 
   // Install react and react-dom for backward compatibility with old CRA cli
   // which doesn't install react and react-dom along with react-scripts

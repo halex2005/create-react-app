@@ -17,6 +17,7 @@
     "scripts",
     "template",
     "template-typescript",
+    "template-bare",
     "utils"
   ],
   "bin": {
