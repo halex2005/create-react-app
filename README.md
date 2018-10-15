@@ -1,3 +1,21 @@
+# About This Fork
+
+> This fork exists to bring back the basic functionality of `react-app-rewired` in
+> a simple and non intrusive way.  
+> I do my best to keep this fork up-to-date and to inject as little custom code as
+> possible.
+
+Hey there, this fork is maintained to provide you with `react-scripts-rewired`
+which is the 2.x way of extending `create-react-app`.
+
+If you are familiar with `react-app-rewired` is basically the same API working on
+Webpack4 and create-react-app 2.x.
+
+[read the full documentation](./packages/react-scripts/README.md)
+
+---
+
+
 # Create React App [![Build Status](https://travis-ci.org/facebook/create-react-app.svg?branch=master)](https://travis-ci.org/facebook/create-react-app) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/pulls)
 
 Create React apps with no build configuration.
