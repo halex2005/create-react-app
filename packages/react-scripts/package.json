@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
-  "version": "2.0.5",
+  "name": "marcopeg-react-scripts",
+  "version": "2.0.4",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "repository": "marcopeg/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/marcopeg/create-react-app/issues"
   },
   "files": [
     "bin",
