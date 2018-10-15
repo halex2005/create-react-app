@@ -26,3 +26,26 @@ function that could mutate the webpack configuration that is provided by `create
 ## Extend Webpack DevServer config
 
 The very same concept is applied to the `webpackDevServer.config.extend.js`.
+
+## Custom App Template
+
+You can create your own app template as `.cra-template/` and place it in the
+folder in which you are going to create your new app.
+
+If you want to specify a custom template folder to use, there is what I believe
+to be a temporary CLI option that will make CRA to use a local template:
+
+    create-react-app \
+        project-name \
+        --scripts-version marcopeg-react-scripts \
+        --internal-testing-template my-custom-template
+
+## Basic Templates
+
+This custom fork of `react-scripts` comes with a couple of specific templates
+that might come in handy to bootstrap a new project:
+
+- bare: there is literally nothig to it
+- mobile: redux, react-router, graphql client, radium, some extensions as well
+
+
