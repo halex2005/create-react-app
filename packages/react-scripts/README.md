@@ -40,12 +40,12 @@ to be a temporary CLI option that will make CRA to use a local template:
         --scripts-version marcopeg-react-scripts \
         --internal-testing-template my-custom-template
 
-## Basic Templates
+## Shipped Templates
 
 This custom fork of `react-scripts` comes with a couple of specific templates
 that might come in handy to bootstrap a new project:
 
 - bare: there is literally nothig to it
-- mobile: redux, react-router, graphql client, radium, some extensions as well
+- mobile: redux, react-router, graphql client, radium, some extensions as well (under construction)
 
 
