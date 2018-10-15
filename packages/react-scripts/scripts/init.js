@@ -164,6 +164,7 @@ module.exports = function(
   args.push('react', 'react-dom');
 
   // Install additional template dependencies, if present
+  let hasTemplateDependencies = false;
   const templateDependenciesPath = path.join(
     appPath,
     '.template.dependencies.json'
@@ -176,12 +177,15 @@ module.exports = function(
       })
     );
     fs.unlinkSync(templateDependenciesPath);
+    hasTemplateDependencies = true;
   }
+
+  console.log('INSTALL ALL ', args)
 
   // Install react and react-dom for backward compatibility with old CRA cli
   // which doesn't install react and react-dom along with react-scripts
   // or template is presetend (via --internal-testing-template)
-  if (!isReactInstalled(appPackage) || template) {
+  if (!isReactInstalled(appPackage) || template || hasTemplateDependencies) {
     console.log(`Installing react and react-dom using ${command}...`);
     console.log();
 
