@@ -1,7 +1,7 @@
 {
-  "name": "marcopeg-react-scripts",
-  "version": "2.0.4-19",
-  "description": "Configuration and scripts for Create React App.",
+  "name": "react-scripts-rewired",
+  "version": "2.0.4-2",
+  "description": "Extend create-react-app 2.x as you used to do in react-app-rewired!",
   "repository": "marcopeg/create-react-app",
   "license": "MIT",
   "engines": {
@@ -16,7 +16,8 @@
     "scripts",
     "template",
     "template-bare",
-    "utils"
+    "utils",
+    "lib"
   ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"

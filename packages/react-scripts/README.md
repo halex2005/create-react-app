@@ -1,4 +1,4 @@
-# react-scripts
+# react-scripts-rewired
 
 This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).<br>
 Please refer to its documentation:
@@ -8,7 +8,7 @@ Please refer to its documentation:
 
 ---
 
-# About @marcopeg fork
+# About react-scripts-rewired
 
 This fork exists to bring back the basic functionality of `react-app-rewired` in a simple
 and non intrusive way. I do my best to keep this fork up-to-date and to inject as little
@@ -16,12 +16,16 @@ custom code as possible.
 
 ## Quick Start
 
-    create-react-app project-name --scripts-version marcopeg-react-scripts
+    create-react-app project-name --scripts-version react-scripts-rewired
 
 ## Extend Webpack config
 
 In your project's root you'll find `webpack.config.extend.js` which contains a simple
 function that could mutate the webpack configuration that is provided by `create-react-app`.
+
+Here is a list of existing rewire libraries:
+
+- [rewire-eslint]()
 
 ## Extend Webpack DevServer config
 
