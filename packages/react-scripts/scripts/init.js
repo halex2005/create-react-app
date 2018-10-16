@@ -122,20 +122,15 @@ module.exports = function(
     );
   }
 
-  // inject the possibility to template from local folder
-  const localTemplateName = '.cra-template'
-  const localTemplatePath = path.resolve(originalDirectory, localTemplateName)
-  if (!template && fs.existsSync(localTemplatePath)) {
-    template = localTemplateName
-  }
-
   // try to get a local named template
   const getTemplatePath = (template) => {
+    if (!template) return null
+
     const customTemplatePath = path.resolve(originalDirectory, template);
     // console.log('custom template', customTemplatePath)
     if (fs.existsSync(customTemplatePath)) return customTemplatePath;
 
-    const knownTemplatePath = path.join(ownPath, `template-${template}`);
+    const knownTemplatePath = path.join(ownPath, `lib/template-${template}`);
     // console.log('known template', knownTemplatePath)
     if (fs.existsSync(knownTemplatePath)) return knownTemplatePath;
   };
