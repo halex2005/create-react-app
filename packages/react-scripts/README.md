@@ -25,7 +25,7 @@ function that could mutate the webpack configuration that is provided by `create
 
 Here is a list of existing rewire libraries:
 
-- [rewire-eslint]()
+- [rewire-eslint](https://github.com/marcopeg/create-react-app/tree/v2.0.5/packages/react-scripts/lib/rewire-eslint)
 
 ## Extend Webpack DevServer config
 
@@ -41,7 +41,7 @@ to be a temporary CLI option that will make CRA to use a local template:
 
     create-react-app \
         project-name \
-        --scripts-version marcopeg-react-scripts \
+        --scripts-version react-scripts-rewired \
         --internal-testing-template my-custom-template
 
 ## Shipped Templates
@@ -49,7 +49,7 @@ to be a temporary CLI option that will make CRA to use a local template:
 This custom fork of `react-scripts` comes with a couple of specific templates
 that might come in handy to bootstrap a new project:
 
-- bare: there is literally nothig to it
-- mobile: redux, react-router, graphql client, radium, some extensions as well (under construction)
+- bare: there is literally nothig to it, just a plain folder to start with
+- fullstack: redux, react-router, graphql client, radium, ssr, ... (under construction)
 
 
