@@ -1,1 +1,1 @@
-# create-react-app // Fullstack
+# Fullstack Template
