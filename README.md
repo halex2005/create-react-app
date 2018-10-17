@@ -1,5 +1,10 @@
 # About This Fork
 
+> This fork exists to bring back the basic functionality of `react-app-rewired` in
+> a simple and non intrusive way.  
+> I do my best to keep this fork up-to-date and to inject as little custom code as
+> possible.
+
 Hey there, this fork is maintained to provide you with `react-scripts-rewired`
 which is the 2.x way of extending `create-react-app`.
 

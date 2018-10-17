@@ -1,8 +1,9 @@
 # react-scripts-rewired
 
 > This fork exists to bring back the basic functionality of `react-app-rewired` in
-> a simple and non intrusive way. I do my best to keep this fork up-to-date and
-> to inject as little custom code as possible.
+> a simple and non intrusive way.  
+> I do my best to keep this fork up-to-date and to inject as little custom code as
+> possible.
 
 This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).<br>
 Please refer to its documentation:
