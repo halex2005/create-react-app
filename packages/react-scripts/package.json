@@ -1,21 +1,23 @@
 {
-  "name": "react-scripts",
-  "version": "2.0.5",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "name": "react-scripts-rewired",
+  "version": "2.0.4-3",
+  "description": "Extend create-react-app 2.x as you used to do in react-app-rewired!",
+  "repository": "marcopeg/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/marcopeg/create-react-app/issues"
   },
   "files": [
     "bin",
     "config",
     "scripts",
     "template",
-    "utils"
+    "template-bare",
+    "utils",
+    "lib"
   ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
