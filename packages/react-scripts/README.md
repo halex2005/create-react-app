@@ -1,5 +1,9 @@
 # react-scripts-rewired
 
+> This fork exists to bring back the basic functionality of `react-app-rewired` in
+> a simple and non intrusive way. I do my best to keep this fork up-to-date and
+> to inject as little custom code as possible.
+
 This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).<br>
 Please refer to its documentation:
 
@@ -7,12 +11,6 @@ Please refer to its documentation:
 - [User Guide](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with Create React App.
 
 ---
-
-# About react-scripts-rewired
-
-This fork exists to bring back the basic functionality of `react-app-rewired` in a simple
-and non intrusive way. I do my best to keep this fork up-to-date and to inject as little
-custom code as possible.
 
 ## Quick Start
 
@@ -25,7 +23,7 @@ function that could mutate the webpack configuration that is provided by `create
 
 Here is a list of existing rewire libraries:
 
-- [rewire-eslint](https://github.com/marcopeg/create-react-app/tree/v2.0.5/packages/react-scripts/lib/rewire-eslint)
+- [rewire-eslint](https://github.com/marcopeg/create-react-app/packages/react-scripts/lib/rewire-eslint)
 
 ## Extend Webpack DevServer config
 
