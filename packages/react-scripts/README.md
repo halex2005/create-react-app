@@ -29,7 +29,7 @@ function that could mutate the webpack configuration that is provided by `create
 
 ## Compatible Rewire Libraries:
 
-- [rewire-eslint](https://github.com/marcopeg/create-react-app/packages/react-scripts/lib/rewire-eslint)
+- [rewire-eslint](./lib/rewire-eslint)
 
 ## Extend Webpack DevServer config
 
@@ -53,7 +53,7 @@ to be a temporary CLI option that will make CRA to use a local template:
 This custom fork of `react-scripts` comes with a couple of specific templates
 that might come in handy to bootstrap a new project:
 
-- [barebone](./lib/template-barebone/README.md): plain folder to start with, no existing code.
-- [fullstack](./lib/template-fullstack/README.md): radium, redux, react-router, express, graphql client, ssr, ... (under construction)
+- [barebone](./lib/template-barebone): plain folder to start with, no existing code.
+- [fullstack](./lib/template-fullstack): radium, redux, react-router, express, graphql client, ssr, ... (under construction)
 
 
