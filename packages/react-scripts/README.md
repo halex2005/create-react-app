@@ -22,13 +22,18 @@ Please refer to its documentation:
 In your project's root you'll find `webpack.config.extend.js` which contains a simple
 function that could mutate the webpack configuration that is provided by `create-react-app`.
 
-Here is a list of existing rewire libraries:
+    module.exports = (webpackConfig, env, { paths }) => {
+        webpackConfig = rewireEslint(webpackConfig)
+        return webpackConfig
+    }
+
+## Compatible Rewire Libraries:
 
 - [rewire-eslint](https://github.com/marcopeg/create-react-app/packages/react-scripts/lib/rewire-eslint)
 
 ## Extend Webpack DevServer config
 
-The very same concept is applied to the `webpackDevServer.config.extend.js`.
+The very same concept and signature is applied to the `webpackDevServer.config.extend.js`.
 
 ## Custom App Template
 
@@ -43,12 +48,12 @@ to be a temporary CLI option that will make CRA to use a local template:
         --scripts-version react-scripts-rewired \
         --internal-testing-template my-custom-template
 
-## Shipped Templates
+## Existing Templates
 
 This custom fork of `react-scripts` comes with a couple of specific templates
 that might come in handy to bootstrap a new project:
 
-- bare: there is literally nothig to it, just a plain folder to start with
-- fullstack: redux, react-router, graphql client, radium, ssr, ... (under construction)
+- [barebone](./lib/template-barebone/README.md): plain folder to start with, no existing code.
+- [fullstack](./lib/template-fullstack/README.md): radium, redux, react-router, express, graphql client, ssr, ... (under construction)
 
 
